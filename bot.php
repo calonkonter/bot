@@ -23,6 +23,7 @@
     curl_setopt($ch, CURLOPT_COOKIEFILE, 'cookies.txt');
     curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36');
     $execute = curl_exec($ch);
+    print "$execute";
     curl_close($ch);
 
 ?>
